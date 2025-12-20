@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a2a43, #1e6bb8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 480px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0a2540;
+}
+
+.card p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6b7280;
+}
+
+form {
+    width: 100%;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    background: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1e6bb8;
+    box-shadow: 0 0 0 2px rgba(30,107,184,0.2);
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%236b7280' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d4af37, #f5c542);
+    color: #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}

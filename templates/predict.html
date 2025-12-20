@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+
+<div class="card">
+    <h1>Loan Application</h1>
+    <p>Please enter applicant details</p>
+
+    <form action="/predict" method="post" onsubmit="return validateForm()">
+
+        <!-- Credit History -->
+        <select name="Credit_History" required>
+            <option value="" disabled selected>Credit History</option>
+            <option value="1">Good</option>
+            <option value="0">Poor</option>
+        </select>
+
+        <!-- Property Area -->
+        <select name="Property_Area_Semiurban" required>
+            <option value="" disabled selected>Property Area</option>
+            <option value="1">Semiurban</option>
+            <option value="0">Urban / Rural</option>
+        </select>
+
+        <!-- Married -->
+        <select name="Married" required>
+            <option value="" disabled selected>Marital Status</option>
+            <option value="1">Married</option>
+            <option value="0">Single</option>
+        </select>
+
+        <!-- Education -->
+        <select name="Education" required>
+            <option value="" disabled selected>Education</option>
+            <option value="1">Graduate</option>
+            <option value="0">Not Graduate</option>
+        </select>
+
+        <!-- Applicant Income -->
+        <input type="number" name="ApplicantIncome" placeholder="Applicant Income" required>
+
+        <!-- Coapplicant Income -->
+        <input type="number" name="CoapplicantIncome" placeholder="Coapplicant Income" required>
+
+        <!-- Income Loan Ratio -->
+        <input type="number" step="any" name="Income_loan_Ratio" placeholder="Income Loan Ratio" required>
+
+        <!-- Dependents -->
+        <input type="number" name="Dependents" placeholder="Number of Dependents" required>
+
+        <!-- Gender -->
+        <select name="Gender" required>
+            <option value="" disabled selected>Gender</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <button class="btn" type="submit">Predict Loan</button>
+
+    </form>
+</div>
+
+</body>
+</html>
