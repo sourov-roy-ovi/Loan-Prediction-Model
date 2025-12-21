@@ -22,7 +22,7 @@ Thumbs.db
 # Logs
 *.log
 
-# Model files (if large)
-*.pkl
-*.joblib
-*.h5
+
+
+# VS Code
+.vscode/
