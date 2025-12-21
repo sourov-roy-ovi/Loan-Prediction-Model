@@ -174,7 +174,7 @@ Accuracy alone is not sufficient. Balanced predictions were prioritized for prod
 # Application Screenshots
 
 ## Home Page
-<imag src= "images/Home Page.png" alt="Home Page Screenshot" width="600">
+<imag src="images/Home Page.png" alt="Home Page Screenshot" width="600">
 
 ## Input Form
 
@@ -278,6 +278,7 @@ python app.py
 
 # 👨‍💻 Author
 **Sourov Roy**
+
 Aspiring Machine Learning Engineer
 Focused on building real-world ML systems
 
