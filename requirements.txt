@@ -5,3 +5,4 @@ seaborn
 numpy
 joblib
 scikit-learn
+gunicorn
