@@ -6,3 +6,4 @@ numpy
 joblib
 scikit-learn
 gunicorn
+flask-sqlalchemy
